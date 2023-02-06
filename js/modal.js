@@ -8,7 +8,8 @@ function showAtBigImgFrame(img){
     modalImg.src = img.src
     modal.style.display = 'flex'
 }
-function showAtBigImgFrameSRC(imgsrc){
-    modalImg.src = imgsrc
+function showAtBigImgFrameSRC(img){
+    let imgSrc = img.parentElement.parentElement.parentElement/querySelector('img').src;
+    modalImg.src = imgSrc
     modal.style.display = 'flex'
 }
