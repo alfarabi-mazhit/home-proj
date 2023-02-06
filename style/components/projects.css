@@ -124,6 +124,9 @@
     margin-right: 30px;
     transition: .1s;
 }
+.project-item-header>div{
+    cursor: pointer;
+}
 .project-item-header h5 a{
     color: #6689ff;
     font-size: 18px;

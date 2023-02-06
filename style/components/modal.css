@@ -1,0 +1,25 @@
+#bigImgModal{
+    display: none;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1040;
+}
+.frame{
+    position: relative;
+}
+.close-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+#bigImgModal img{
+    position: relative;
+    width: 100%; 
+}
