@@ -1,0 +1,104 @@
+.container .contacts{
+    margin-top: 0;
+}
+.contacts{
+    margin-left: auto;
+    margin-right: auto;
+}
+.col-sm-8{
+    width: 100%;
+}
+.icon img{
+    width: 64px;
+    filter: invert(58%) sepia(28%) saturate(6841%) hue-rotate(206deg) brightness(101%) contrast(101%);
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.row-30>div{
+    margin-bottom: 30px;
+}
+.row>div{
+    padding: 0 15px;
+}
+.box-contacts {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 310px;
+    transition: .4s;
+    font-family: "Poppins";
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: .025em;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 17%);
+}
+.box-contacts-body {
+    max-width: 250px;
+}
+.box-contacts:hover{
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 17%);
+}
+.box-contacts a{
+    transition: .4s;
+}
+.box-contacts a:hover{
+    color: #6689ff;
+}
+.box-contacts-decor {
+    margin: 30px auto;
+    height: 2px;
+    max-width: 100px;
+    background: #6689ff;
+    transition: all .3s ease-in-out;
+}
+@media (min-width: 576px){
+    .contacts {
+        max-width: 540px;
+    }
+    .col-sm-8 {
+        flex: 0 0 auto;
+        width: 66.66667%;
+    }
+}
+@media (min-width: 768px){
+    .contacts {
+        max-width: 720px;
+    }
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+@media (min-width: 992px){
+    .contacts {
+        max-width: 960px;
+    }
+    .col-lg-4 {
+        flex: 0 0 auto;
+        width: 33.33333%;
+    }
+    .box-contacts {
+        box-shadow: none;
+        border: 1px solid #e1e1e1;
+    }
+    .box-contacts-decor {
+        margin-top: 17px;
+        margin-bottom: 17px;
+        width: 0;
+    }
+    .box-contacts:hover .box-contacts-decor {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+        transition: margin .3s ease, width .4s ease-in-out;
+    }
+}
+@media (min-width: 1200px){
+    .contacts {
+        max-width: 1200px;
+    }
+}

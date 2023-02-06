@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("../../fonts/Poppins/Poppins-Medium.ttf");
+}.banner{
+    width: 100%;
+    padding: 100px 0;
+    background-image: url("../../img/parallax-1.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    /* background-position-x: -300px; */
+    font-family: "Poppins";
+    text-align: right;
+    color: #fff;
+    background-attachment: fixed;
+}
+.banner-text{
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.banner h3{
+    font-size: 32px;
+    line-height: 1.3125;
+    letter-spacing: .024em;
+    word-spacing: 0.05em;
+}
+.banner p{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.71429;
+    letter-spacing: .05em;
+}
+.banner .buttons{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+}
+.banner a{
+    padding: 17px 45px 15px;
+    margin-right: 8px;
+}
+@media (min-width: 768px){
+    .banner-text{
+        max-width: 720px;
+    }
+    .banner-text>*{
+        max-width: 350px;
+    }
+}
+@media(max-width:992px){
+    .banner-text .buttons{
+        flex-direction: column;
+    }
+    .banner-text .buttons>a{
+        margin: 10px 0;
+    }
+}
+@media(min-width:992px){
+    .banner-text{
+        max-width: 960px;
+    }
+    .banner-text>*{
+        max-width: 550px;
+    }
+}
+@media(min-width:1200px){
+    .banner-text{
+        max-width: 1200px;
+    }
+}

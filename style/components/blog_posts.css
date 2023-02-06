@@ -1,0 +1,119 @@
+@media (min-width: 576px){
+    .blog-posts{
+        width: 540px;
+    }
+    .latest-posts-item{
+        width: calc(50%);
+    }
+}
+@media (min-width: 768px){
+    .blog-posts{
+        width: 720px;
+    }
+    .latest-posts-item-time{
+        padding-top: 16px;
+        font-size: 24px;
+    
+    }
+}
+@media (min-width: 992px){
+    .blog-posts{
+        width: 960px;
+    }
+    .latest-posts-item{
+        width: calc(33.3%);
+    }
+}
+@media (min-width: 1200px){
+    .blog-posts{
+        width: 1200px;
+    }
+}
+.blog-posts{
+    font-family: "Poppins";
+    padding-bottom: 100px;
+    padding: 50px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blog-posts>h2{
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.latest-posts{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.latest-posts-item{
+    line-height: 1.71429;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+}
+.latest-posts-item .img{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.latest-posts-item img{
+    width: 100%;
+    transition: .4s;
+    transform: scale(1.02);
+}
+.latest-posts-item:hover img{
+    transform: scale(1);
+}
+.latest-posts-item-time{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 17px 8px 1px;
+    color: #6689ff;
+    font-size: 21px;
+    line-height: .5;
+    letter-spacing: .025em;
+    background-color: #fff;
+}
+.latest-posts-item-time-month{
+    font-size: 32px;
+}
+.latest-posts-item-time::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: inherit;
+    transform: translate3d(0, -100%, 0) skewX(30deg);
+    transform-origin: 50% 100%;
+    will-change: transform;
+    background-color: #fff;
+}
+.latest-posts-item-time-month::after{
+    content: '/';
+}
+.latest-posts-item h4{
+    margin-top: 20px;
+    font-size: 21px;
+    letter-spacing: .024em;
+    word-spacing: 0.05em;
+}
+.latest-posts-item h4 a{
+    transition: .4s;
+}
+.latest-posts-item h4:hover a{
+    color: #6689ff;
+}
+.latest-posts-item p{
+    margin-top: 12px;
+    letter-spacing: .025em;
+    color: #9b9b9b;
+    font-size: 14px;
+}

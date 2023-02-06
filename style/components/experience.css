@@ -1,0 +1,162 @@
+.experience{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+}
+.experience>div{
+    max-width: 100%;
+    padding: 0px 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.experience>.number{
+    background: linear-gradient(-62deg, #45476f, #6689ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: -.06em;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    font-family: "Poppins";
+    font-size: 410px;
+    line-height: 85%;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-family: "Poppins";
+    max-width: 320px;
+    margin-top: 24px;
+}
+.text h3{
+    font-size: 32px;
+    position: relative;
+    padding-left: 26px;
+    line-height: 1.3125;
+}
+.text h3::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 4px;
+    background: #d7d7d7;
+}
+.text p{
+    margin-top: 25px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.71429;
+    letter-spacing: .05em;
+    color: #9b9b9b;
+}
+.experience .button{
+    margin-top: 30px;
+    padding: 19px 35px 17px;
+}
+.experience .button:hover{
+    color: #000;
+    background-color: #fff;
+    border-color: #000;
+}
+.experience .flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 26px;
+    font-family: "Poppins";
+    width: 400px;
+    height: 300px;
+}
+.experience .flex-item{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px;
+    text-align: center;
+    width: 50%;
+    border: 1px solid #e1e1e1;
+}
+.experience .flex-item:nth-child(1), .experience .flex-item:nth-child(2){
+    padding-top: 0;
+    border-top: 0;
+    max-height: 150;
+}
+.experience .flex-item:nth-child(odd){
+    padding-left: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.experience .flex-item:nth-child(3), .experience .flex-item:nth-child(4){
+    padding-bottom: 0;
+    border-bottom: 0;
+    border-top: 0;
+}
+.experience .flex-item:nth-child(even){
+    padding-right: 0;
+    border-right: 0;
+}
+.experience .flex-item .number{
+    display: inline-block;
+    font-size: 110px;
+    line-height: 0.8;
+    letter-spacing: .1em;
+}
+.experience .flex-item .number{
+    display: inline-block;
+    font-size: 70px;
+    letter-spacing: 0;
+}
+.experience .flex-item h6{
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: .1em;
+    color: #9b9b9b;
+    margin-top: 4px;
+    font-size: 16px;
+    line-height: 1.125;
+    text-transform: uppercase;
+}
+.experience .clients{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.experience .clients-item{
+    max-width: 270px;
+    max-height: 117px;
+    border: 1px solid #e1e1e1;
+    display: flex;
+    justify-content: center;
+    align-items: centers;
+    transition: .4s;
+    position: relative;
+}
+.experience .clients-item img{
+    transition: .4s;
+    border: 0px solid #e1e1e1;
+    filter: invert(50%) sepia(24%) saturate(16%) hue-rotate(357deg) brightness(95%) contrast(81%);
+}
+.experience .clients-item:hover {
+    border: 1px solid #000;
+}
+.experience .clients-item:hover img{
+    border: 1px solid #000;
+    transform: scale(0.9);
+    filter: none;
+}
+@media (min-width:1200px) {
+    .experience{
+        max-width: 1200px;
+    }
+}
+@media (max-width:1144px) {
+    
+}

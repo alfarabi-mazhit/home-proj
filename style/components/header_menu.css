@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("../../fonts/Poppins/Poppins-Medium.ttf");
+}
+.header-menu{
+    position: fixed;
+    top: 0;
+    display: flex;
+    padding: 11px 78px 11px 15px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color:white;
+    box-shadow: 0px -5px 10px 0px #000000;
+    z-index: 2;
+}
+.header-burger{
+    display: none;
+    transition: .4s;
+}
+.header-logo img{
+    width: 190px;
+    transition: .4s;
+}
+.header-menu-bar{
+    font-family: "Poppins";
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+}
+.header-menu-button{
+    position: relative;
+    margin-right: 42px;
+}
+.header-menu-button::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #6689ff;
+    left: 0;
+    bottom: -20px;
+    transition: .2s;
+    opacity: 0;
+}
+.header-menu-button:hover::after{
+    opacity: 1;
+    bottom: -10px;
+}
+.header-menu-button-share img{
+    width: 24px;
+    height: 24px;
+}
+.header-menu-button-share:hover img{
+    filter: invert(65%) sepia(42%) saturate(6603%) hue-rotate(205deg) brightness(100%) contrast(103%);
+}
+@media (max-width: 991px){
+    .header-menu{
+       justify-content: unset;
+    }
+    .header-menu-bar{
+        display: none;
+    }
+    .header-burger{
+        display: block;
+    }
+    .header-logo img{
+        margin-left: 15px;
+        width: 120px;
+    }
+}

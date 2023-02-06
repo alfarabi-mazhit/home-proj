@@ -1,0 +1,135 @@
+.gets{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    font-family: "Poppins";
+}
+.gets>div{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.gets h2{
+    font-size: 42px;
+    margin-bottom: 25px;
+    line-height: 1.66667;
+}
+.gets .tabs{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid #e1e1e1;
+    margin-bottom: 25px;
+}
+.gets .tabs .tab-item{
+    position: relative;
+    padding: 0 0 10px 0;
+    background-color: transparent;
+    border: 0;
+    font-size: 32px;
+}
+.gets .tabs .tab-item a{
+    color: #9b9b9b;
+    transition: .4s;
+}
+.gets .tabs .tab-item a:hover{
+    color : #6689ff;
+}
+.gets .tabs .tab-item a:focus{
+    color : #6689ff;
+}
+.gets .tabs .tab-item a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #6689ff;
+    bottom: -3px;
+    left: 0;
+    transition: .4s;
+}
+.gets .tabs .tab-item a:focus::after{
+    color : #6689ff;
+    width: 100%;
+}
+.gets .left h5{
+    font-size: 18px;
+    line-height: 1.71429;
+    font-weight: 500;
+    letter-spacing: .05em;
+    color: #151515;
+}
+.gets .left p{
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.71429;
+    font-weight: 500;
+    letter-spacing: .05em;
+    color: #151515;
+}
+.gets .button{
+    padding: 19px 35px 17px;
+}
+.gets .buttons{
+    margin-top: 60px;
+}
+.gets .button1{
+    color: #000;
+    background-color: #fff;
+    border-color: #000;
+}
+.gets .button:hover{
+    color: #000;
+    background-color: #fff;
+    border-color: #000;
+}
+.gets .button1:hover{
+    color: #6689ff;
+    border-color: #6689ff;
+}
+.gets .left>a{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.gets .right{
+    display: flex;
+    justify-content: center;
+}
+.gets .right img{
+    width: 50%;
+}
+.gets .right img:first-child{
+    transform: scale(1.1);   
+}
+.gets .right img:last-child{
+    transform: scale(0.9);   
+}
+@media (min-width:576px) {
+    .gets{
+        max-width: 540px;
+    }
+}
+@media (min-width:768px) {
+    .gets{
+        max-width: 720px;
+    }
+}
+@media (min-width:992px) {
+    .gets{
+        max-width: 960px;
+    }
+    .gets .left{
+        width: 40%;
+    }
+    .gets .right{
+        width: 25%;
+    }
+}
+@media (min-width:1200px) {
+    .gets{
+        max-width: 1200px;
+    }
+}
