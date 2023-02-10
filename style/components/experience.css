@@ -102,16 +102,16 @@
     padding-right: 0;
     border-right: 0;
 }
-.experience .flex-item .number{
-    display: inline-block;
-    font-size: 110px;
-    line-height: 0.8;
-    letter-spacing: .1em;
-}
-.experience .flex-item .number{
-    display: inline-block;
+.experience .flex-item .number, .experience .flex-item span{
+    /* font-size: 110px; */
     font-size: 70px;
+    line-height: 0.8;
+    /* letter-spacing: .1em; */
     letter-spacing: 0;
+}
+.experience .flex-item .divider{
+    display: flex;
+    justify-content: center;
 }
 .experience .flex-item h6{
     text-align: center;

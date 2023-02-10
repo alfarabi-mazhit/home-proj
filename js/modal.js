@@ -10,6 +10,10 @@ function showAtBigImgFrame(img){
 }
 function showAtBigImgFrameSRC(img){
     // let imgSrc = img.parentElement.parentElement.parentElement.querySelector('img').src;
+    // let imgSrc = img
+    // do{
+    //     imgSrc = imgSrc.parentElement.querySelector('.project-item')
+    // }while(imgSrc.)
     modalImg.src = img
     modal.style.display = 'flex'
 }

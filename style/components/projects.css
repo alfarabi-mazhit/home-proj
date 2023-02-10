@@ -5,6 +5,7 @@
 }
 .projects{
     margin-top: 70px !important;
+    position: relative;
 }
 .projects-header{
     display: flex;
@@ -36,6 +37,7 @@
     color:#000;
     margin: 20px auto;
     min-width: auto;
+    cursor: pointer;
 }
 .projects-filter-button:hover{
     background-color: transparent;
@@ -45,8 +47,8 @@
 .projects-filter{
     margin: 30px 0px;
     display: flex;
-    flex-wrap: wrap;
     text-align: center;
+    align-items: center;
     justify-content: center;
     font-size: 18px;
     line-height: 1;
@@ -54,13 +56,24 @@
     letter-spacing: .1em;
     text-transform: uppercase;
     font-family: "Poppins";
+    transition: .5s;
 }
-.projects-filter a{
-    margin: 5px 25px;
+.projects-filter.button-pressed{
+    visibility: visible;
+    opacity: 1;
+}
+.projects-filter.button-pressed span:focus{
+    background-color: #6689ff;
+}
+.projects-filter span{
+    word-wrap: break-word;
+    padding: 10px 0;
+    width: 100%;
     color: #9b9b9b;
     transition: .4s;
+    cursor: pointer;
 }
-.projects-filter a:hover{
+.projects-filter span:hover{
     color:#6689ff;
 }
 .projects-filter-border{
@@ -144,6 +157,23 @@
 }
 @media(max-width:992px){
     .projects-filter{
+        visibility: hidden;
+        opacity: 0;
+        display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    align-items: center;
+    top: 30px;
+    right: 35%;
+    left: 35%;
+    z-index: 5;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 17%);
+    padding: 15px 0;
+    transition: .4s;
+    }
+    .projects-filter-border{
         display: none;
     }
     .projects-filter-button{
@@ -158,6 +188,9 @@
         grid-template-columns: repeat(auto-fit,100%);
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .projects-filter{
+        font-size: 14px;
     }
 }
 @media (min-width:992px) {

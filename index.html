@@ -1,798 +1,690 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/bdd2744e50.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style/all.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="header-menu">
-      <div id="burger-menu-icon">
-        <i onclick="changeBurgerMenu()" class="fa-solid fa-bars fa-2x"></i>
-   
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/bdd2744e50.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link rel="stylesheet" href="style/all.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="header-menu">
+    <div id="burger-menu-icon">
+      <i onclick="changeBurgerMenu()" class="fa-solid fa-bars fa-2x"></i>
+
+    </div>
+    <div class="header-logo">
+      <img src="img/logo.png" alt="" />
+    </div>
+    <div class="header-menu-bar">
+      <div class="header-menu-button">
+        <a onclick="scrolll('home')">Home</a>
       </div>
-      <div class="header-logo">
-        <img src="img/logo.png" alt="" />
+      <div class="header-menu-button">
+        <a onclick="scrolll('services')">Services</a>
       </div>
-      <div class="header-menu-bar">
-        <div class="header-menu-button">
-          <a method="post" href="#home">Home</a>
+      <div class="header-menu-button">
+        <a onclick="scrolll('projects')">Projects</a>
+      </div>
+      <div class="header-menu-button">
+        <a onclick="scrolll('team')">Team</a>
+      </div>
+      <div class="header-menu-button">
+        <a onclick="scrolll('news')">News</a>
+      </div>
+      <div class="header-menu-button">
+        <a onclick="scrolll('contacts')">Contacts</a>
+      </div>
+      <div class="header-menu-button-share">
+        <a>
+          <img src="img/share.png" alt="" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="burger-menu">
+    <div class="social">
+      <a><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+      <a><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+      <a><i class="fa fa-google-plus fa-lg" aria-hidden="true"></i></a>
+      <a><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+    </div>
+    <div style="width: 100%; border-top: 1px solid #e3e3e3; margin-bottom: 20px;"></div>
+    <div class="menu-item">
+      <a onclick="scrolll('home')">Home</a>
+    </div>
+    <div class="menu-item">
+      <a onclick="scrolll('services')">Services</a>
+    </div>
+    <div class="menu-item">
+      <a onclick="scrolll('projects')">Projects</a>
+    </div>
+    <div class="menu-item">
+      <a onclick="scrolll('team')">Team</a>
+    </div>
+    <div class="menu-item">
+      <a onclick="scrolll('news')">News</a>
+    </div>
+    <div class="menu-item">
+      <a onclick="scrolll('contacts')">Contacts</a>
+    </div>
+  </div>
+  <section class="container">
+    <div class="home" id="home">
+      <div class="home-slider">
+        <h1>Mobile App Development</h1>
+        <p>
+          Since our establishment, we have been delivering high-quality and
+          sustainable software solutions for corporate purposes of worldwide
+          businesses.
+        </p>
+        <a class="button" href="">Get in touch</a>
+      </div>
+      <div class="home-slider home-slider-2">
+        <h1>Mobile App Development</h1>
+        <p>
+          Since our establishment, we have been delivering high-quality and
+          sustainable software solutions for corporate purposes of worldwide
+          businesses.
+        </p>
+        <a class="button" href="">Get in touch</a>
+      </div>
+      <div class="home-slider home-slider-3">
+        <h1>Mobile App Development</h1>
+        <p>
+          Since our establishment, we have been delivering high-quality and
+          sustainable software solutions for corporate purposes of worldwide
+          businesses.
+        </p>
+        <a class="button" href="">Get in touch</a>
+      </div>
+    </div>
+    <div class="services" id="services">
+      <div class="tablet">
+        <img src="img/tablet.png" alt="" />
+      </div>
+      <div class="service-items-grid">
+        <div class="service-item">
+          <h3>What We Offer</h3>
+          <div class="service-item-line"></div>
+          <a class="button" href="">View all services</a>
         </div>
-        <div class="header-menu-button">
-          <a href="#services">Services</a>
+        <div class="service-item">
+          <img src="img/telephone_icon.png" alt="" />
+          <img src="img/triangle_icon.png" alt="" />
+          <h5>
+            <a href="">Corporate<br />solutions</a>
+          </h5>
+          <div class="service-item-line"></div>
+          <p>
+            Need specific software for your company? We are ready to develop
+            it!
+          </p>
         </div>
-        <div class="header-menu-button">
-          <a href="#projects">Projects</a>
+        <div class="service-item">
+          <img src="img/headphone_icon1.png" alt="" />
+          <img src="img/triangle_icon.png" alt="" />
+          <h5>
+            <a href="">Call center<br />solutions</a>
+          </h5>
+          <div class="service-item-line"></div>
+          <p>
+            Our experts provide custom products of any complexity for call
+            centers.
+          </p>
         </div>
-        <div class="header-menu-button">
-          <a href="#Team">Team</a>
-        </div>
-        <div class="header-menu-button">
-          <a href="#News">News</a>
-        </div>
-        <div class="header-menu-button">
-          <a href="#Contacts">Contacts</a>
-        </div>
-        <div class="header-menu-button-share">
-          <a href="">
-            <img src="img/share.png" alt="" />
-          </a>
+        <div class="service-item">
+          <img src="img/cloud_icon.png" alt="" />
+          <img src="img/triangle_icon.png" alt="" />
+          <h5>
+            <a href="">Cloud<br />Development</a>
+          </h5>
+          <div class="service-item-line"></div>
+          <p>We can also offer you reliable cloud development solutions</p>
         </div>
       </div>
     </div>
-    <div id="burger-menu">
-        <div class="social">
-          <a href=""><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
-          <a href=""><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
-          <a href=""><i class="fa fa-google-plus fa-lg" aria-hidden="true"></i></a>
-          <a href=""><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+    <div class="banner">
+      <div class="banner-text">
+        <div style="display: flex;">
+          <h3 id="banner-text-output"></h3>
+          <h3>|</h3>
         </div>
-        <div style="width: 100%; border-top: 1px solid #e3e3e3; margin-bottom: 20px;"></div>
-        <div class="menu-item">
-          <a href="#home">Home</a>
-        </div>
-        <div class="menu-item">
-          <a href="#services">Services</a>
-        </div>
-        <div class="menu-item">
-          <a href="#projects">Projects</a>
-        </div>
-        <div class="menu-item">
-          <a href="#team">Team</a>
-        </div>
-        <div class="menu-item">
-          <a href="#news">News</a>
-        </div>
-        <div class="menu-item">
-          <a href="#contacts">Contacts</a>
-        </div>
-      </div>
-    <section class="container">
-      <div class="home" id="home">
-        <div class="home-slider-1">
-          <h1>Mobile App Development</h1>
-          <p>
-            Since our establishment, we have been delivering high-quality and
-            sustainable software solutions for corporate purposes of worldwide
-            businesses.
-          </p>
+        <p>
+          Do you need a unique software solution for your company? We know how
+          to help you!
+        </p>
+        <div class="buttons">
           <a class="button" href="">Get in touch</a>
+          <a class="button button-reverse" href="">Learn more</a>
         </div>
       </div>
-      <div class="services" id="services">
-        <div class="tablet">
-          <img src="img/tablet.png" alt="" />
-        </div>
-        <div class="service-items-grid">
-          <div class="service-item">
-            <h3>What We Offer</h3>
-            <div class="service-item-line"></div>
-            <a class="button" href="">View all services</a>
-          </div>
-          <div class="service-item">
-            <img src="img/telephone_icon.png" alt="" />
-            <img src="img/triangle_icon.png" alt="" />
-            <h5>
-              <a href="">Corporate<br />solutions</a>
-            </h5>
-            <div class="service-item-line"></div>
-            <p>
-              Need specific software for your company? We are ready to develop
-              it!
-            </p>
-          </div>
-          <div class="service-item">
-            <img src="img/headphone_icon1.png" alt="" />
-            <img src="img/triangle_icon.png" alt="" />
-            <h5>
-              <a href="">Call center<br />solutions</a>
-            </h5>
-            <div class="service-item-line"></div>
-            <p>
-              Our experts provide custom products of any complexity for call
-              centers.
-            </p>
-          </div>
-          <div class="service-item">
-            <img src="img/cloud_icon.png" alt="" />
-            <img src="img/triangle_icon.png" alt="" />
-            <h5>
-              <a href="">Cloud<br />Development</a>
-            </h5>
-            <div class="service-item-line"></div>
-            <p>We can also offer you reliable cloud development solutions</p>
-          </div>
-        </div>
+    </div>
+    <div class="projects" id="projects">
+      <div class="projects-header">
+        <h2>Latest Projects</h2>
+        <p>
+          In our portfolio, you can browse the latest products developed for
+          our clients for different corporate purposes. Our qualified team of
+          interface designers and software developers is always ready to
+          create something unique for you.
+        </p>
       </div>
-      <div class="banner">
-        <div class="banner-text">
-          <h3>Let's Develop Your Next Great App!</h3>
-          <p>
-            Do you need a unique software solution for your company? We know how
-            to help you!
-          </p>
-          <div class="buttons">
-            <a class="button" href="">Get in touch</a>
-            <a class="button button-reverse" href="">Learn more</a>
-          </div>
-        </div>
-      </div>
-      <div class="projects">
-        <div class="projects-header">
-          <h2>Latest Projects</h2>
-          <p>
-            In our portfolio, you can browse the latest products developed for
-            our clients for different corporate purposes. Our qualified team of
-            interface designers and software developers is always ready to
-            create something unique for you.
-          </p>
-        </div>
-        <div class="button projects-filter-button">FILTER</div>
+      <div style="position: relative;">
+        <button onclick="toggleMenu()" class="button projects-filter-button">FILTER</button>
         <div class="projects-filter">
-          <a href="">ALL</a>
+          <span onclick="filterItems('all')">ALL</span>
           <div class="projects-filter-border"></div>
-          <a href="">MOBILE APPS</a>
+          <span onclick="filterItems('mobile-apps')">MOBILE APPS</span>
           <div class="projects-filter-border"></div>
-          <a href="">CUSTOM SOFTWARE</a>
+          <span onclick="filterItems('custom-software')">CUSTOM SOFTWARE</span>
           <div class="projects-filter-border"></div>
-          <a href="">QA & TESTING</a>
+          <span onclick="filterItems('qa-testing')">QA & TESTING</span>
           <div class="projects-filter-border"></div>
-          <a href="">UX AND DESIGN</a>
-        </div>
-        <div class="projects-items">
-          <div class="project-item">
-            <img src="img/gallery-1.jpg" alt="" />
-            <div class="project-item-description">
-              <div class="project-item-header">
-                <img onclick="showAtBigImgFrameSRC('img/gallery-1-orig.jpg')" src="img/zoom-increasing-symbol.png" alt="" />
-                <h5>
-                  <a href="">Project #1</a>
-                </h5>
-              </div>
-              <p>
-                We work hard on every app to deliver top-notch features with
-                great UI that you won't find anywhere else.
-              </p>
-            </div>
-          </div>
-          <div class="project-item">
-            <img src="img/gallery-2.jpg" alt="" />
-            <div class="project-item-description">
-              <div class="project-item-header">
-                <div>
-                  <img onclick="showAtBigImgFrameSRC('img/gallery-2-orig.jpg')" src="img/zoom-increasing-symbol.png" alt="" />
-                </div>
-                <h5>
-                  <a href="">Project #2</a>
-                </h5>
-              </div>
-              <p>
-                We work hard on every app to deliver top-notch features with
-                great UI that you won't find anywhere else.
-              </p>
-            </div>
-          </div>
-          <div class="project-item">
-            <img src="img/gallery-3.jpg" alt="" />
-            <div class="project-item-description">
-              <div class="project-item-header">
-                <div>
-                  <img onclick="showAtBigImgFrameSRC('img/gallery-3-orig.jpg')" src="img/zoom-increasing-symbol.png" alt="" />
-                </div>
-                <h5>
-                  <a href="">Project #3</a>
-                </h5>
-              </div>
-              <p>
-                We work hard on every app to deliver top-notch features with
-                great UI that you won't find anywhere else.
-              </p>
-            </div>
-          </div>
-          <div class="project-item">
-            <img src="img/gallery-4.jpg" alt="" />
-            <div class="project-item-description">
-              <div class="project-item-header">
-                <div>
-                  <img onclick="showAtBigImgFrameSRC('img/gallery-1-orig.jpg')" src="img/zoom-increasing-symbol.png" alt="" />
-                </div>
-                <h5>
-                  <a href="">Project #4</a>
-                </h5>
-              </div>
-              <p>
-                We work hard on every app to deliver top-notch features with
-                great UI that you won't find anywhere else.
-              </p>
-            </div>
-          </div>
-          <div class="project-item">
-            <img src="img/gallery-5.jpg" alt="" />
-            <div class="project-item-description">
-              <div class="project-item-header">
-                <div>
-                  <img onclick="showAtBigImgFrameSRC('img/gallery-5-orig.jpg')" src="img/zoom-increasing-symbol.png" alt="" />
-                </div>
-                <h5>
-                  <a href="">Project #5</a>
-                </h5>
-              </div>
-              <p>
-                We work hard on every app to deliver top-notch features with
-                great UI that you won't find anywhere else.
-              </p>
-            </div>
-          </div>
-          <div class="project-item">
-            <div class="gray"></div>
-            <img src="img/gallery-6.jpg" alt="" />
-            <div class="project-item-description">
-              <div class="project-item-header">
-                <a href="">
-                  <img onclick="showAtBigImgFrameSRC('img/gallery-6-orig.jpg')" src="img/zoom-increasing-symbol.png" alt="" />
-                </a>
-                <h5>
-                  <a href="">Project #6</a>
-                </h5>
-              </div>
-              <p>
-                We work hard on every app to deliver top-notch features with
-                great UI that you won't find anywhere else.
-              </p>
-            </div>
-          </div>
-          <div class="project-item">
-            <img src="img/gallery-7.jpg" alt="" />
-            <div class="project-item-description">
-              <div class="project-item-header">
-                <div>
-                  <img onclick="showAtBigImgFrameSRC('img/gallery-7-orig.jpg')" src="img/zoom-increasing-symbol.png" alt="" />
-                </div>
-                <h5>
-                  <a href="">Project #7</a>
-                </h5>
-              </div>
-              <p>
-                We work hard on every app to deliver top-notch features with
-                great UI that you won't find anywhere else.
-              </p>
-            </div>
-          </div>
-          <div class="project-item">
-            <img src="img/gallery-8.jpg" alt="" />
-            <div class="project-item-description">
-              <div class="project-item-header">
-                <div>
-                  <img onclick="showAtBigImgFrameSRC('img/gallery-8-orig.jpg')" src="img/zoom-increasing-symbol.png" alt="" />
-                </div>
-                <h5>
-                  <a href="">Project #8</a>
-                </h5>
-              </div>
-              <p>
-                We work hard on every app to deliver top-notch features with
-                great UI that you won't find anywhere else.
-              </p>
-            </div>
-          </div>
+          <span onclick="filterItems('ux-design')">UX AND DESIGN</span>
         </div>
       </div>
-      <div class="experience">
-        <div class="number">10</div>
-        <div>
-          <div class="text">
-            <h3>Years Of Experience</h3>
-            <p>
-              RatherApp is a team of highly experienced app designers and
-              developers creating unique software for you.
-            </p>
-            <a class="button" href="">GET IN TOUCH</a>
-          </div>
-        </div>
-        <div class="flex">
-          <div class="flex-item">
-            <div class="number">2<span>K</span></div>
-            <h6>APPS DEVELOPED</h6>
-          </div>
-          <div class="flex-item">
-            <div class="number">40</div>
-            <h6>CONSULTANTS</h6>
-          </div>
-          <div class="flex-item">
-            <div class="number">12</div>
-            <h6>AWARDS WON</h6>
-          </div>
-          <div class="flex-item">
-            <div class="number">160</div>
-            <h6>EMPLOYEES</h6>
-          </div>
-        </div>
-        <div class="clients">
-          <div class="clients-item">
-            <img src="img/clients-1.png" alt="" />
-          </div>
-          <div class="clients-item">
-            <img src="img/clients-2.png" alt="" />
-          </div>
-          <div class="clients-item">
-            <img src="img/clients-3.png" alt="" />
-          </div>
-          <div class="clients-item">
-            <img src="img/clients-4.png" alt="" />
-          </div>
-        </div>
+      <div class="projects-items" id="projects-items">sss
       </div>
-      <div class="team">
-        <h2>Meet The Team</h2>
-        <div class="members">
-          <div class="member">
-            <a href="">
-              <img src="img/team-11-420x424.jpg" alt="" />
-            </a>
-            <div class="caption">
-              <h4>
-                <a href="">Ryan Wilson</a>
-              </h4>
-              <p>Director of Production</p>
-            </div>
-          </div>
-          <div class="member">
-            <a href="">
-              <img src="img/team-12-420x424.jpg" alt="" />
-            </a>
-            <div class="caption">
-              <h4>
-                <a href="">Jill Peterson</a>
-              </h4>
-              <p>UI Designer</p>
-            </div>
-          </div>
-          <div class="member">
-            <a href="">
-              <img src="img/team-13-420x424.jpg" alt="" />
-            </a>
-            <div class="caption">
-              <h4>
-                <a href="">Sam Robinson</a>
-              </h4>
-              <p>Senior Developer</p>
-            </div>
-          </div>
-          <div class="member">
-            <a href="">
-              <img src="img/team-14-420x424.jpg" alt="" />
-            </a>
-            <div class="caption">
-              <h4>
-                <a href="">Mary Lee</a>
-              </h4>
-              <p>Software Developer</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="gets">
-        <div class="left">
-          <h2>Get More With Us</h2>
-          <div class="tabs">
-            <div class="tab-item">
-              <a href="#tabs-6-1">01</a>
-            </div>
-            <div class="tab-item">
-              <a href="#tabs-6-2">02</a>
-            </div>
-            <div class="tab-item">
-              <a href="#tabs-6-3">03</a>
-            </div>
-            <div class="tab-item">
-              <a href="#tabs-6-4">04</a>
-            </div>
-          </div>
-          <h5>FREE APPS</h5>
-          <p>
-            We regularly upload new free apps to our website, which is fully
-            accessible to our clients and subscribers. You can also find out
-            about free apps in our blog.
-          </p>
-          <div class="buttons">
-            <a class="button" href="">GET IN TOUCH</a>
-            <a class="button button1" href="">LEARN MORE</a>
-          </div>
-        </div>
-        <div class="right">
-          <img src="img/index-4-313x580.png" alt="" />
-          <img src="img/index-5-313x580.png" alt="" />
-        </div>
-      </div>
-      <div class="comments">
-        <h2>What People Say</h2>
-        <div class="comments-clients">
-          <div class="comments-client-item-border">
-            <div class="comments-client-item">
-              <div class="comments-client-header">
-                <a href=""><img src="img/user-11-75x75.jpg" alt="" /></a>
-                <div class="comments-client-name">
-                  <h4><a href="">Catherine Williams</a></h4>
-                  <p>Regular client</p>
-                </div>
-              </div>
-              <p>
-                RatherApp offers a high caliber of resources skilled in
-                Microsoft Azure .NET, mobile and Quality Assurance. They became
-                our true business partners over the past three years.
-              </p>
-            </div>
-          </div>
-          <div class="comments-client-item-border">
-            <div class="comments-client-item">
-              <div class="comments-client-header">
-                <a href=""><img src="img/user-12-75x75.jpg" alt="" /></a>
-                <div class="comments-client-name">
-                  <h4><a href="">Rupert Wood</a></h4>
-                  <p>Regular client</p>
-                </div>
-              </div>
-              <p>
-                RatherApp powered us with a competent team to develop products
-                for banking services. The team has been delivering results
-                within budget and time, which is amazing.
-              </p>
-            </div>
-          </div>
-          <div class="comments-client-item-border">
-            <div class="comments-client-item">
-              <div class="comments-client-header">
-                <a href=""><img src="img/user-20-75x75.jpg" alt="" /></a>
-                <div class="comments-client-name">
-                  <h4><a href="">Samantha Brown</a></h4>
-                  <p>Regular client</p>
-                </div>
-              </div>
-              <p>
-                RatherApp is a highly skilled and uniquely capable firm with
-                multitudes of talent on-board. We have collaborated on a number
-                of diverse projects that have been a great success.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pricing">
-        <h2>Pricing</h2>
-        <div class="pricings">
-          <div class="pricing-item-border">
-            <div class="pricing-item">
-              <div class="pricing-item-body">
-                <h5 class="pricing-item-title">BASIC</h5>
-                <h3 class="pricing-item-price">$500.00</h3>
-                <span class="pricing-item-time">STARTING AT</span>
-                <div class="pricing-item-divider">
-                  <div class="pricing-item-divider-line"></div>
-                  <span>Basic</span>
-                </div>
-                <ul class="pricing-item-list">
-                  <li class="active">
-                    <i class="fa-solid fa-check"></i>
-                    <span>Concept development</span>
-                  </li>
-                  <li class="active">
-                    <i class="fa-solid fa-check"></i>
-                    <span>UI design</span>
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-check"></i>
-                    <span>Configuration management</span>
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-check"></i>
-                    <span>Software quality assurance</span>
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-check"></i>
-                    <span>App integration</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="pricing-button">
-                <a href="">GET STARTED</a>
-              </div>
-            </div>
-          </div>
-          <div class="pricing-item-border">
-            <div class="pricing-item pricing-popular">
-              <div class="pricing-item-body">
-                <h5 class="pricing-item-title">optimal</h5>
-                <h3 class="pricing-item-price">$800.00</h3>
-                <span class="pricing-item-time">STARTING AT</span>
-                <div class="pricing-item-divider">
-                  <div class="pricing-item-divider-line"></div>
-                  <span>optimal</span>
-                </div>
-                <ul class="pricing-item-list">
-                  <li class="active">
-                    <i class="fa-solid fa-check"></i>
-                    <span>Concept development</span>
-                  </li>
-                  <li class="active">
-                    <i class="fa-solid fa-check"></i>
-                    <span>UI design</span>
-                  </li>
-                  <li class="active">
-                    <i class="fa-solid fa-check"></i>
-                    <span>Configuration management</span>
-                  </li>
-                  <li class="active">
-                    <i class="fa-solid fa-check"></i>
-                    <span>Software quality assurance</span>
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-check"></i>
-                    <span>App integration</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="pricing-button">
-                <a href="">GET STARTED</a>
-              </div>
-            </div>
-          </div>
-          <div class="pricing-item-border">
-            <div class="pricing-item">
-              <div class="pricing-item-body">
-                <h5 class="pricing-item-title">ultimate</h5>
-                <h3 class="pricing-item-price">$1200.00</h3>
-                <span class="pricing-item-time">STARTING AT</span>
-                <div class="pricing-item-divider">
-                  <div class="pricing-item-divider-line"></div>
-                  <span>ultimate</span>
-                </div>
-                <ul class="pricing-item-list">
-                  <li class="active">
-                    <i class="fa-solid fa-check"></i>
-                    <span>Concept development</span>
-                  </li>
-                  <li class="active">
-                    <i class="fa-solid fa-check"></i>
-                    <span>UI design</span>
-                  </li>
-                  <li class="active">
-                    <i class="fa-solid fa-check"></i>
-                    <span>Configuration management</span>
-                  </li>
-                  <li class="active">
-                    <i class="fa-solid fa-check"></i>
-                    <span>Software quality assurance</span>
-                  </li>
-                  <li class="active">
-                    <i class="fa-solid fa-check"></i>
-                    <span>App integration</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="pricing-button">
-                <a href="">GET STARTED</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="blog-posts">
-        <h2>Latest Blog Posts</h2>
-        <div class="latest-posts">
-          <div class="latest-posts-item">
-            <div class="img">
-              <a href="">
-                <img src="img/post-10-370x307.jpg" alt="" />
-                <div class="latest-posts-item-time">
-                  <time datetime="2022-02-04">
-                    <span class="latest-posts-item-time-month">02</span>
-                    <span class="latest-posts-item-time-number">04</span>
-                  </time>
-                </div>
-              </a>
-            </div>
-            <h4>
-              <a href="">Benefits Of Async/Await</a>
-            </h4>
-            <p>
-              Asynchronous functions are a good and bad thing in JavaScript. The
-              good side is that asynchronous functions are non-blocking and...
-            </p>
-          </div>
-          <div class="latest-posts-item">
-            <div class="img">
-              <a href="">
-                <img src="img/post-11-370x307.jpg" alt="" />
-                <div class="latest-posts-item-time">
-                  <time datetime="2021-02-17">
-                    <span class="latest-posts-item-time-month">02</span>
-                    <span class="latest-posts-item-time-number">17</span>
-                  </time>
-                </div>
-              </a>
-            </div>
-            <h4>
-              <a href="">Key Considerations Of IPaaS</a>
-            </h4>
-            <p>
-              Digital transformation requires cloud appropriate adoption, legacy
-              IT systems modernization, and Agile-based methodologies for
-              faster...
-            </p>
-          </div>
-          <div class="latest-posts-item">
-            <div class="img">
-              <a href="">
-                <img src="img/post-12-370x307.jpg" alt="" />
-                <div class="latest-posts-item-time">
-                  <time datetime="2021-02-22">
-                    <span class="latest-posts-item-time-month">02</span>
-                    <span class="latest-posts-item-time-number">17</span>
-                  </time>
-                </div>
-              </a>
-            </div>
-            <h4>
-              <a href="">Never Stop Optimizing Your Code</a>
-            </h4>
-            <p>
-              In this tutorial, we will discuss the Hibernate Query Language.
-              HQL is an object-oriented query language. Hibernate Query...
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="contacts">
-        <div class="row row-30 justify-content-center">
-          <div class="col-sm-8 col-md-6 col-lg-4">
-            <article class="box-contacts">
-              <div class="box-contacts-body">
-                <div class="icon">
-                  <img src="img/cellphone.png" alt="" />
-                </div>
-                <div class="box-contacts-decor"></div>
-                <p class="box-contacts-link">
-                  <a href="tel:#">+1 323-913-4688</a>
-                </p>
-                <p class="box-contacts-link">
-                  <a href="tel:#">+1 323-888-4554</a>
-                </p>
-              </div>
-            </article>
-          </div>
-          <div class="col-sm-8 col-md-6 col-lg-4">
-            <article class="box-contacts">
-              <div class="box-contacts-body">
-                <div class="icon">
-                  <img
-                    src="img/up-arrow-with-house-shape-outlined-symbol.png"
-                    alt=""
-                  />
-                </div>
-                <div class="box-contacts-decor"></div>
-                <p class="box-contacts-link">
-                  <a href="#">4730 Crystal Springs Dr, Los Angeles, CA 90027</a>
-                </p>
-              </div>
-            </article>
-          </div>
-          <div class="col-sm-8 col-md-6 col-lg-4">
-            <article class="box-contacts">
-              <div class="box-contacts-body">
-                <div class="icon">
-                  <img src="img/chat-oval-speech-bubbles-symbol.png" alt="" />
-                </div>
-                <div class="box-contacts-decor"></div>
-                <p class="box-contacts-link">
-                  <a href="mailto:#">mail@demolink.org</a>
-                </p>
-                <p class="box-contacts-link">
-                  <a href="mailto:#">info@demolink.org</a>
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-      <div class="contact-form">
-        <div class="container1">
-          <div class="header">
-            <div class="header-title">
-              <h3>Get In Touch</h3>
-            </div>
-            <div class="header-text">
-              If you have any questions, just fill in the contact form, and we
-              will answer you shortly.
-            </div>
-          </div>
-          <form action="">
-            <div class="row">
-              <div class="col col-md-4 has-error">
-                <input class="form-input" type="text" placeholder="Your Name" />
-              </div>
-              <div class="col col-md-4">
-                <input class="form-input" type="text" placeholder="E-mail" />
-              </div>
-              <div class="col col-md-4">
-                <input class="form-input" type="text" placeholder="Phone" />
-              </div>
-              <div class="col col-12">
-                <textarea
-                  class="form-input"
-                  name="Message"
-                  id="contact-message"
-                  placeholder="Message"
-                ></textarea>
-              </div>
-            </div>
-            <button class="button">SEND MESSAGE</button>
-          </form>
-        </div>
-      </div>
+    </div>
+    <div class="experience">
+      <div class="number" data-num="10">0</div>
       <div>
-        <h1
-          style="
+        <div class="text">
+          <h3>Years Of Experience</h3>
+          <p>
+            RatherApp is a team of highly experienced app designers and
+            developers creating unique software for you.
+          </p>
+          <a class="button" href="">GET IN TOUCH</a>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="flex-item">
+          <div class="divider">
+            <div class="number" data-num="2">0</div>
+            <span>K</span>
+          </div>
+
+          <h6>APPS DEVELOPED</h6>
+        </div>
+        <div class="flex-item">
+          <div class="number" data-num="40">0</div>
+          <h6>CONSULTANTS</h6>
+        </div>
+        <div class="flex-item">
+          <div class="number" data-num="12">0</div>
+          <h6>AWARDS WON</h6>
+        </div>
+        <div class="flex-item">
+          <div class="number" data-num="160">0</div>
+          <h6>EMPLOYEES</h6>
+        </div>
+      </div>
+      <div class="clients">
+        <div class="clients-item">
+          <img src="img/clients-1.png" alt="" />
+        </div>
+        <div class="clients-item">
+          <img src="img/clients-2.png" alt="" />
+        </div>
+        <div class="clients-item">
+          <img src="img/clients-3.png" alt="" />
+        </div>
+        <div class="clients-item">
+          <img src="img/clients-4.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="team" id="team">
+      <h2>Meet The Team</h2>
+      <div class="members">
+        <div class="member">
+          <a href="">
+            <img src="img/team-11-420x424.jpg" alt="" />
+          </a>
+          <div class="caption">
+            <h4>
+              <a href="">Ryan Wilson</a>
+            </h4>
+            <p>Director of Production</p>
+          </div>
+        </div>
+        <div class="member">
+          <a href="">
+            <img src="img/team-12-420x424.jpg" alt="" />
+          </a>
+          <div class="caption">
+            <h4>
+              <a href="">Jill Peterson</a>
+            </h4>
+            <p>UI Designer</p>
+          </div>
+        </div>
+        <div class="member">
+          <a href="">
+            <img src="img/team-13-420x424.jpg" alt="" />
+          </a>
+          <div class="caption">
+            <h4>
+              <a href="">Sam Robinson</a>
+            </h4>
+            <p>Senior Developer</p>
+          </div>
+        </div>
+        <div class="member">
+          <a href="">
+            <img src="img/team-14-420x424.jpg" alt="" />
+          </a>
+          <div class="caption">
+            <h4>
+              <a href="">Mary Lee</a>
+            </h4>
+            <p>Software Developer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gets">
+      <div class="left">
+        <h2>Get More With Us</h2>
+        <div class="tabs">
+          <div class="tab-item">
+            <a href="#tabs-6-1">01</a>
+          </div>
+          <div class="tab-item">
+            <a href="#tabs-6-2">02</a>
+          </div>
+          <div class="tab-item">
+            <a href="#tabs-6-3">03</a>
+          </div>
+          <div class="tab-item">
+            <a href="#tabs-6-4">04</a>
+          </div>
+        </div>
+        <h5>FREE APPS</h5>
+        <p>
+          We regularly upload new free apps to our website, which is fully
+          accessible to our clients and subscribers. You can also find out
+          about free apps in our blog.
+        </p>
+        <div class="buttons">
+          <a class="button" href="">GET IN TOUCH</a>
+          <a class="button button1" href="">LEARN MORE</a>
+        </div>
+      </div>
+      <div class="right">
+        <img src="img/index-4-313x580.png" alt="" />
+        <img src="img/index-5-313x580.png" alt="" />
+      </div>
+    </div>
+    <div class="comments">
+      <h2>What People Say</h2>
+      <div class="comments-clients">
+        <div class="comments-client-item-border">
+          <div class="comments-client-item">
+            <div class="comments-client-header">
+              <a href=""><img src="img/user-11-75x75.jpg" alt="" /></a>
+              <div class="comments-client-name">
+                <h4><a href="">Catherine Williams</a></h4>
+                <p>Regular client</p>
+              </div>
+            </div>
+            <p>
+              RatherApp offers a high caliber of resources skilled in
+              Microsoft Azure .NET, mobile and Quality Assurance. They became
+              our true business partners over the past three years.
+            </p>
+          </div>
+        </div>
+        <div class="comments-client-item-border">
+          <div class="comments-client-item">
+            <div class="comments-client-header">
+              <a href=""><img src="img/user-12-75x75.jpg" alt="" /></a>
+              <div class="comments-client-name">
+                <h4><a href="">Rupert Wood</a></h4>
+                <p>Regular client</p>
+              </div>
+            </div>
+            <p>
+              RatherApp powered us with a competent team to develop products
+              for banking services. The team has been delivering results
+              within budget and time, which is amazing.
+            </p>
+          </div>
+        </div>
+        <div class="comments-client-item-border">
+          <div class="comments-client-item">
+            <div class="comments-client-header">
+              <a href=""><img src="img/user-20-75x75.jpg" alt="" /></a>
+              <div class="comments-client-name">
+                <h4><a href="">Samantha Brown</a></h4>
+                <p>Regular client</p>
+              </div>
+            </div>
+            <p>
+              RatherApp is a highly skilled and uniquely capable firm with
+              multitudes of talent on-board. We have collaborated on a number
+              of diverse projects that have been a great success.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pricing">
+      <h2>Pricing</h2>
+      <div class="pricings">
+        <div class="pricing-item-border">
+          <div class="pricing-item">
+            <div class="pricing-item-body">
+              <h5 class="pricing-item-title">BASIC</h5>
+              <h3 class="pricing-item-price">$500.00</h3>
+              <span class="pricing-item-time">STARTING AT</span>
+              <div class="pricing-item-divider">
+                <div class="pricing-item-divider-line"></div>
+                <span>Basic</span>
+              </div>
+              <ul class="pricing-item-list">
+                <li class="active">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Concept development</span>
+                </li>
+                <li class="active">
+                  <i class="fa-solid fa-check"></i>
+                  <span>UI design</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <span>Configuration management</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <span>Software quality assurance</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <span>App integration</span>
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-button">
+              <a href="">GET STARTED</a>
+            </div>
+          </div>
+        </div>
+        <div class="pricing-item-border">
+          <div class="pricing-item pricing-popular">
+            <div class="pricing-item-body">
+              <h5 class="pricing-item-title">optimal</h5>
+              <h3 class="pricing-item-price">$800.00</h3>
+              <span class="pricing-item-time">STARTING AT</span>
+              <div class="pricing-item-divider">
+                <div class="pricing-item-divider-line"></div>
+                <span>optimal</span>
+              </div>
+              <ul class="pricing-item-list">
+                <li class="active">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Concept development</span>
+                </li>
+                <li class="active">
+                  <i class="fa-solid fa-check"></i>
+                  <span>UI design</span>
+                </li>
+                <li class="active">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Configuration management</span>
+                </li>
+                <li class="active">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Software quality assurance</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <span>App integration</span>
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-button">
+              <a href="">GET STARTED</a>
+            </div>
+          </div>
+        </div>
+        <div class="pricing-item-border">
+          <div class="pricing-item">
+            <div class="pricing-item-body">
+              <h5 class="pricing-item-title">ultimate</h5>
+              <h3 class="pricing-item-price">$1200.00</h3>
+              <span class="pricing-item-time">STARTING AT</span>
+              <div class="pricing-item-divider">
+                <div class="pricing-item-divider-line"></div>
+                <span>ultimate</span>
+              </div>
+              <ul class="pricing-item-list">
+                <li class="active">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Concept development</span>
+                </li>
+                <li class="active">
+                  <i class="fa-solid fa-check"></i>
+                  <span>UI design</span>
+                </li>
+                <li class="active">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Configuration management</span>
+                </li>
+                <li class="active">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Software quality assurance</span>
+                </li>
+                <li class="active">
+                  <i class="fa-solid fa-check"></i>
+                  <span>App integration</span>
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-button">
+              <a href="">GET STARTED</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blog-posts" id="news">
+      <h2>Latest Blog Posts</h2>
+      <div class="latest-posts">
+        <div class="latest-posts-item">
+          <div class="img">
+            <a href="">
+              <img src="img/post-10-370x307.jpg" alt="" />
+              <div class="latest-posts-item-time">
+                <time datetime="2022-02-04">
+                  <span class="latest-posts-item-time-month">02</span>
+                  <span class="latest-posts-item-time-number">04</span>
+                </time>
+              </div>
+            </a>
+          </div>
+          <h4>
+            <a href="">Benefits Of Async/Await</a>
+          </h4>
+          <p>
+            Asynchronous functions are a good and bad thing in JavaScript. The
+            good side is that asynchronous functions are non-blocking and...
+          </p>
+        </div>
+        <div class="latest-posts-item">
+          <div class="img">
+            <a href="">
+              <img src="img/post-11-370x307.jpg" alt="" />
+              <div class="latest-posts-item-time">
+                <time datetime="2021-02-17">
+                  <span class="latest-posts-item-time-month">02</span>
+                  <span class="latest-posts-item-time-number">17</span>
+                </time>
+              </div>
+            </a>
+          </div>
+          <h4>
+            <a href="">Key Considerations Of IPaaS</a>
+          </h4>
+          <p>
+            Digital transformation requires cloud appropriate adoption, legacy
+            IT systems modernization, and Agile-based methodologies for
+            faster...
+          </p>
+        </div>
+        <div class="latest-posts-item">
+          <div class="img">
+            <a href="">
+              <img src="img/post-12-370x307.jpg" alt="" />
+              <div class="latest-posts-item-time">
+                <time datetime="2021-02-22">
+                  <span class="latest-posts-item-time-month">02</span>
+                  <span class="latest-posts-item-time-number">17</span>
+                </time>
+              </div>
+            </a>
+          </div>
+          <h4>
+            <a href="">Never Stop Optimizing Your Code</a>
+          </h4>
+          <p>
+            In this tutorial, we will discuss the Hibernate Query Language.
+            HQL is an object-oriented query language. Hibernate Query...
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="contacts" id="contacts">
+      <div class="row row-30 justify-content-center">
+        <div class="col-sm-8 col-md-6 col-lg-4">
+          <article class="box-contacts">
+            <div class="box-contacts-body">
+              <div class="icon">
+                <img src="img/cellphone.png" alt="" />
+              </div>
+              <div class="box-contacts-decor"></div>
+              <p class="box-contacts-link">
+                <a href="tel:#">+1 323-913-4688</a>
+              </p>
+              <p class="box-contacts-link">
+                <a href="tel:#">+1 323-888-4554</a>
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="col-sm-8 col-md-6 col-lg-4">
+          <article class="box-contacts">
+            <div class="box-contacts-body">
+              <div class="icon">
+                <img src="img/up-arrow-with-house-shape-outlined-symbol.png" alt="" />
+              </div>
+              <div class="box-contacts-decor"></div>
+              <p class="box-contacts-link">
+                <a href="#">4730 Crystal Springs Dr, Los Angeles, CA 90027</a>
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="col-sm-8 col-md-6 col-lg-4">
+          <article class="box-contacts">
+            <div class="box-contacts-body">
+              <div class="icon">
+                <img src="img/chat-oval-speech-bubbles-symbol.png" alt="" />
+              </div>
+              <div class="box-contacts-decor"></div>
+              <p class="box-contacts-link">
+                <a href="mailto:#">mail@demolink.org</a>
+              </p>
+              <p class="box-contacts-link">
+                <a href="mailto:#">info@demolink.org</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form">
+      <div class="container1">
+        <div class="header">
+          <div class="header-title">
+            <h3>Get In Touch</h3>
+          </div>
+          <div class="header-text">
+            If you have any questions, just fill in the contact form, and we
+            will answer you shortly.
+          </div>
+        </div>
+        <form action="">
+          <div class="row">
+            <div class="col col-md-4 has-error">
+              <input class="form-input" type="text" placeholder="Your Name" />
+            </div>
+            <div class="col col-md-4">
+              <input class="form-input" type="text" placeholder="E-mail" />
+            </div>
+            <div class="col col-md-4">
+              <input class="form-input" type="text" placeholder="Phone" />
+            </div>
+            <div class="col col-12">
+              <textarea class="form-input" name="Message" id="contact-message" placeholder="Message"></textarea>
+            </div>
+          </div>
+          <button class="button">SEND MESSAGE</button>
+        </form>
+      </div>
+    </div>
+    <div>
+      <h1 style="
             text-align: center;
             font-family: 'Poppins';
             font-size: 32px;
             margin: 100px 0;
-          "
-        >
-          GOOGLE MAPS
-        </h1>
-      </div>
-    </section>
-    <footer>
-      <div class="footer-top">
-        <a href="">Ui Design</a>
-        <a href="">Windows/Mac Os Apps</a>
-        <a href="">Android/Ios Apps</a>
-        <a href="">Cloud Solutions</a>
-        <a href="">Customer Support</a>
-      </div>
-      <div class="footer-bottom">
-        <div>© 2023 RatherApp</div>
-        <div>
-          <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-          <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-          <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        </div>
-        <div>All rights reserved</div>
-      </div>
-    </footer>
-    <div id="bigImgModal">
-        <div class="frame">
-        <img id="bigImgframeimg" src="" alt="">
-        <button onclick="closeModal()" class="close-btn">x</button>
-        </div>
+          ">
+        GOOGLE MAPS
+      </h1>
     </div>
-    <script src="js/burger-menu.js"></script>
-    <script src="js/modal.js"></script>
-  </body>
+  </section>
+  <footer>
+    <div class="footer-top">
+      <a href="">Ui Design</a>
+      <a href="">Windows/Mac Os Apps</a>
+      <a href="">Android/Ios Apps</a>
+      <a href="">Cloud Solutions</a>
+      <a href="">Customer Support</a>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2023 RatherApp</div>
+      <div>
+        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </div>
+      <div>All rights reserved</div>
+    </div>
+  </footer>
+  <div id="bigImgModal">
+    <div class="frame">
+      <img id="bigImgframeimg" src="" alt="">
+      <button onclick="closeModal()" class="close-btn">x</button>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/burger-menu.js"></script>
+  <script src="js/modal.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/typewriter.js"></script>
+  <script src="js/filter.js"></script>
+</body>
+
 </html>

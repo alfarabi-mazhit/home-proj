@@ -17,6 +17,9 @@ input, button, textarea{
 .container>div.header-menu{
     margin-top: 0px;
 }
+a{
+    cursor: pointer;
+}
 a, button{
     text-decoration: none;
 }
